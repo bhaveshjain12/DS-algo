@@ -1,0 +1,8 @@
+package OopsInharitance;
+
+public class Football extends Person {
+	
+	public void play() {
+		System.out.println("footballer is playing football");
+	}
+}

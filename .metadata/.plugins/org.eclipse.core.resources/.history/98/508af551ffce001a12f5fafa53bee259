@@ -1,0 +1,9 @@
+package String;
+
+public class StringIntro {
+public static void main(String[] args) {
+	String name="Bhavesh";
+	String anothername=new String("Bhavesh");
+	System.out.println(name==anothername);
+}
+}

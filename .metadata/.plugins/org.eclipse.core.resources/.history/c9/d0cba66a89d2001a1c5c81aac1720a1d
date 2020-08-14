@@ -1,0 +1,11 @@
+package OopsInharitance;
+
+public class MainClass {
+public static void main(String[] args) {
+	Tearcher t=new Tearcher();
+	t.name=" Mr. Bhavesh";
+	t.eat();
+	t.walk();
+	t.teach();
+}
+}

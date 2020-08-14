@@ -1,0 +1,29 @@
+package Oops;
+ class Dog{
+	 
+ }
+class cat{
+	String bread,fur,colour;
+	int legs,eyes;
+public void walk() {
+	System.out.println("cat is walting");
+}
+public  void eat() {
+	System.out.println("cat is eating");
+}
+public  void disc() {
+	System.out.println("my cat has "+ legs +" legs and "+ eyes +" eyes");
+}
+}
+
+public class MainClass {
+public static void main(String[] args) {
+	cat cat1=new cat();
+	cat cat2=new cat();
+	cat1.walk();
+	cat2.eat();
+	cat1.legs=3;
+	cat1.eyes=2;
+	cat1.disc();
+}
+}

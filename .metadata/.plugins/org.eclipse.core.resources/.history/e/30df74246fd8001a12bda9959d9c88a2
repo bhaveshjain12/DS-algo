@@ -1,0 +1,34 @@
+package clg;
+
+import java.util.Scanner;
+
+public class productandsum {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+//	int x=sc.nextInt();
+//	int y=sc.nextInt();
+//	int c= x*y;
+//	System.out.println(c);
+//	double a=Math.pow((double)x,(double) x);
+//	System.out.println(a);
+//	double b=Math.pow((double)y,(double) y);
+//	System.out.println(b);
+//	for(int i=0;i<c;i++) {
+//	if(c==120) {
+//		System.out.println(c);
+//		
+//	}else if(a+b==289) {
+//		
+//	}else {
+//		int d= x+y;
+//		System.out.println(d);
+//	}
+//	}
+	int c=120;
+	int sq=289;
+	c=c*2;
+	int sum=sq+c;
+	System.out.println("sum= "+Math.sqrt(sum));
+			
+}
+}

@@ -1,0 +1,25 @@
+package userInput;
+import java.util.Scanner;
+
+public class ScanneraUserInput {
+	static int power(int n,int m){
+		return(int)Math.pow(n,m);
+		
+		
+	}
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Entern n and m:");
+		int n= sc.nextInt();
+		int m=sc.nextInt();
+		if(n<0||m<0) {
+			System.out.println("n or m should not br negitive");
+			return;
+			}
+		if(n==0 || m==0) {
+			System.out.println("n or m should not to be equal to zero");
+			return;
+		}
+		System.out.println(power(n,m));
+	}
+}

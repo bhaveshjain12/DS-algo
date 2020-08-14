@@ -1,0 +1,14 @@
+package String;
+
+public class StringIntro {
+public static void main(String[] args) {
+	String name="Bhavesh jain ";//by latteral store in pool memory
+//	String name2="Bhavesh ";
+//	
+//	String anothername=new String("Bhavesh");//by object sort in both pool and heap memory
+//	System.out.println(name==name2);
+	System.out.println(name.charAt(7));//.charAt(0)
+	System.out.println(name.length());//.length()
+	System.out.println(name.substring(0));
+}
+}

@@ -1,0 +1,17 @@
+package loops;
+
+public class ForLoops {
+	public static void main(String[] args) {
+//		String b="hello world";
+//		for(int a=0;a<10000;++a) {
+//			
+//			System.out.println(a+" "+b);
+//			
+		int a=4;
+		for (int i=1;i<=10;i++) {
+			int c=a*i;
+			
+		}
+		System.out.println(a+"*"+i+"="+c);
+	}
+}

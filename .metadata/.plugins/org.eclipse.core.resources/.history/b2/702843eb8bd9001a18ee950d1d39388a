@@ -1,0 +1,10 @@
+package LinkedList;
+
+public class MainLinkedList {
+public static void main(String[] args) {
+	MyLinkedList myll=new MyLinkedList();
+	myll.add(12);
+	myll.add(15);
+	myll.print();
+}
+}

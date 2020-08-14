@@ -1,0 +1,8 @@
+package operators;
+
+public class loops {
+ public static void main(String[] args) {
+	Scanner sc =new canner(System.in);
+	
+}
+}

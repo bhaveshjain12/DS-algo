@@ -1,0 +1,44 @@
+package pp;
+
+import java.util.*;
+
+public class Sclidingwindow {
+public static void main(String[] args) {
+	solution s=new solution();
+	int a[]= {4,3,1,2,5,3,4,7,1,9};
+	int k=4;
+	int ans []=s.mexSlidingWindow(a, k);
+	
+	for (int x:ans) {
+		System.out.print(x +" ");
+	}
+}
+static class solution{
+	public int[] mexSlidingWindow(int[] a,int k) {
+		int n=a.length;
+		Deque<Integer> dq=new LinkedList<>();
+		int ans[]=new int[n-k+1];
+		
+		int i=0;
+		for(;i<k;i++) {
+			while(!dq.isEmpty() && a[dq.peekLast()] <=a[i]) {
+				dq.removeLast();
+			}
+			dq.addLast(i);
+		}
+		for(;i<n;i++) {
+			ans[i-k]=a[dq.peekFirst()];
+			while(!dq.isEmpty() && dq.peekFirst()<=i-k) {
+				dq.removeFirst();
+			}
+			while(!dq.isEmpty() && a[dq.peekLast()] <=a[i]) {
+				dq.removeLast();
+			}
+		}
+		
+			ans[i-k]=a[dq.peekFirst()];
+		
+		return ans;
+	}
+}
+}
