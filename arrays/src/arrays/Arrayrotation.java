@@ -63,6 +63,7 @@ public static void main(String[] args) {
 
 	Arrayrotation rotate=new Arrayrotation();
 	int arr[]= {1,2,3,4,5,6,7};
+	int n=arr.length;
 	rotate.a(arr, 2, 7);
 	rotate.p(arr, 7);
 }
