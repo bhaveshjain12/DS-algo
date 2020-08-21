@@ -32,7 +32,8 @@ static int duplicate(int a[]) {
 	Arrays.sort(a);
 	for(int i=0;i<a.length;i++) {
 		if(a[i]==a[i+1]) {
-			return a[i];
+		return a[i];
+		//System.out.println(a[i]);
 		}
 	}
 	return -1;
