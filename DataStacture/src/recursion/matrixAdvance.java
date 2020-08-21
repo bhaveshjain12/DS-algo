@@ -19,7 +19,7 @@ public static void main(String[] args) {
 //	floodFill(a,0,0,3,1);
 //	printMatrix(a);
 	//permutations("abcd",0,3);
-	int a[]= {1,5,700,2,};
+	int a[]= {1,2,3,4};
 	System.out.println(coinMax(a,0,a.length-1));
 }
 static int coinMax(int a[],int l,int r) {
