@@ -18,19 +18,19 @@ package Day1;
 			    for(int i=0;i<a.length;i++){
 			        a[i]=sc.nextInt();
 			    }
-			    System.out.println(find(a));
+			    find(a);
 			    find2(a);
 			}
 		}
-		static int find(int arr[]) {
-			Arrays.sort(arr);
-		    for(int i=0;i<arr.length;i++){
-	        if(arr[i]==arr[i+1]) {
-		        return arr[i];
-		        }
-		    }
-			return -1;
-		}
+//		static int find(int arr[]) {
+//			Arrays.sort(arr);
+//		    for(int i=0;i<arr.length;i++){
+//	        if(arr[i]==arr[i+1]) {
+//		        return arr[i];
+//		        }
+//		    }
+//			return -1;
+//		}
 		    
 	//	    int arr[]=new int[a.length+1];
 //		    for(int i=0;i<a.length;i++){
@@ -43,16 +43,17 @@ package Day1;
 //		    }
 		
 		//*********************MATH.aBS******************
-//		static void find(int arr[]){
-//			int size=arr.length;
-//			for (int i = 0; i < size; i++) { 
-//	            int abs_val = Math.abs(arr[i]); 
-//	            if (arr[abs_val - 1] > 0) 
-//	                arr[abs_val - 1] = -arr[abs_val - 1]; 
-//	            else
-//	                System.out.println(abs_val); 
-//	        } 
-		    
+		static void find(int arr[]){
+			int size=arr.length;
+			for (int i = 0; i < size; i++) { 
+	            int abs_val = arr[i]; 
+	            if (arr[abs_val - 1] > 0) 
+	                arr[abs_val - 1] = -arr[abs_val - 1]; 
+	            else {
+	                System.out.println(abs_val); 
+	        } 
+			}
+		}
 		    static void find2(int arr[]) {
 		    	for (int i = 0; i < arr.length; i++) { 
 		            if (arr[i] > 0) 

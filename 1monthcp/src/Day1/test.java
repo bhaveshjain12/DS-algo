@@ -46,7 +46,7 @@ Scanner sc = new Scanner(System.in);
 				System.out.print("Duplicate Number = "+i);
 			}
 			System.out.println();
-			if(arr[i] == 0)
+			 if(arr[i] == 0)
 			{
 				System.out.print("Missing Number = "+i);
 			}
