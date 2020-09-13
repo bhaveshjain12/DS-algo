@@ -4,12 +4,12 @@ public class intro {
 public static void main(String[] args) {
 	List<Integer> ll=new LinkedList<>();
 	List<Integer> al=new ArrayList<>();
-//	ll.add(12);
-//	ll.add(2);
-//	ll.add(32);
-//	System.out.println(ll.get(1));
-	getTimeDiff(ll);
-	getTimeDiff(al);
+	ll.add(12);
+	ll.add(2);
+	ll.add(32);
+	System.out.println(ll.get(1));
+//	getTimeDiff(ll);
+//	getTimeDiff(al);
 }
 static void getTimeDiff(List<Integer> list) {
 	long start=System.currentTimeMillis();
